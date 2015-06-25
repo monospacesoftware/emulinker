@@ -1,0 +1,22 @@
+BODY		{ margin:0; background-color:#000000; font-size:10pt; color:#FFFFFF; font-weight:normal; font-family:'Courier New',monospace; }
+
+.head		{ font-size:14pt; color:#FFFFFF; font-weight:bold; font-family:'Courier New',monospace; }
+.subhead	{ font-size:12pt; color:#FFFFFF; font-weight:bold; font-family:'Courier New',monospace; }
+.black		{ font-size:18pt; color:#000000; font-weight:bold; font-family:'Courier New',monospace; }
+
+TD		{ font-size:10pt; color:#FFFFFF; font-weight:normal; font-family:'Courier New',monospace; }
+TH		{ font-size:10pt; color:#FFFFFF; font-weight:bold; font-family:'Courier New', monospace; }
+IMG		{ border:none; }
+
+.main		{ width:770px; border-color:#FFFFFF; border-style:solid; border-width:2px; }
+.main TH	{ background-color:#3A3A3A; text-align:center; vertical-align:top; padding:1px;  }
+.main TD	{ background-color:#1A1A1A; text-align:left; vertical-align:top; padding:1px; }
+
+.inside		{ border-color:#000000; border-style:solid; border-width:1px; }
+.inside TH	{ background-color:#3A3A3A; text-align:center; vertical-align:top; border-style:solid; border-width:1px; border-color:#000000; }
+.inside TD	{ background-color:#1A1A1A; text-align:left; vertical-align:top; border-style:solid; border-width:1px; border-color:#000000; }
+
+A:link  	{ font-size: 10pt; text-decoration: none; font-weight:bold; color: #0099FF; }
+A:visited	{ font-size: 10pt; text-decoration: none; font-weight:bold; color: #0099FF; }
+A:hover		{ font-size: 10pt; text-decoration: none; font-weight:bold; color: #FF0066; }
+A:active	{ font-size: 10pt; text-decoration: none; font-weight:bold; color: #0099FF; }
