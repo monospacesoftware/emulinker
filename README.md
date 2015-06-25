@@ -4,5 +4,8 @@ EmuLinker is a [Kaillera](http://www.kaillera.com/) network server. Kaillera is 
 
 This is a port of the project from [SourceForge](https://sourceforge.net/projects/emulinker) to GitHub by the original author ([Paul Cowan](https://github.com/monospacesoftware)) on 6/25/2015.  I am concurrently changing the license to GPL 2.0.  No code has changed since 2006.
 
-[Download EmuLinker](emulinker/package/archive/emulinker-kaillera-server-1.0.2.zip) / [User Guide](emulinker/package/emulinker/doc/quickstart.txt) / [Change Log](emulinker/package/emulinker/README.txt)
++ [Download EmuLinker](emulinker/package/archive/emulinker-kaillera-server-1.0.2.zip) 
++ [User Guide](emulinker/package/emulinker/doc/quickstart.txt)
++ [Change Log](emulinker/package/emulinker/README.txt)
++ 
 
