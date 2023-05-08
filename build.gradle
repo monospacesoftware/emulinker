@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+group 'org.emulinker'
+version '1.0.3-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['conf']
+        }
+    }
+}
+
+dependencies {
+    implementation 'jetty:org.mortbay.jetty:5.1.12'
+    implementation 'commons-configuration:commons-configuration:1.1'
+    implementation 'commons-httpclient:commons-httpclient:3.1'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.picocontainer:picocontainer:1.3'
+    implementation 'org.nanocontainer:nanocontainer:1.1.2'
+}
