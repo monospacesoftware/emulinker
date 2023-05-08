@@ -1,19 +1,25 @@
 package org.emulinker.kaillera.model.impl;
 
-import java.net.InetSocketAddress;
-import java.util.*;
-import java.util.concurrent.*;
-import java.text.*;
-
-import org.apache.commons.configuration.*;
-import org.apache.commons.logging.*;
-import org.emulinker.release.*;
+import org.apache.commons.configuration.Configuration;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.emulinker.kaillera.access.AccessManager;
 import org.emulinker.kaillera.master.StatsCollector;
-import org.emulinker.kaillera.model.*;
+import org.emulinker.kaillera.model.KailleraGame;
+import org.emulinker.kaillera.model.KailleraServer;
+import org.emulinker.kaillera.model.KailleraUser;
 import org.emulinker.kaillera.model.event.*;
 import org.emulinker.kaillera.model.exception.*;
-import org.emulinker.util.*;
+import org.emulinker.release.ReleaseInfo;
+import org.emulinker.util.EmuLang;
+import org.emulinker.util.EmuUtil;
+import org.emulinker.util.Executable;
+
+import java.net.InetSocketAddress;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class KailleraServerImpl implements KailleraServer, Executable
 {
@@ -363,7 +369,7 @@ public class KailleraServerImpl implements KailleraServer, Executable
 			throw new LoginException(EmuLang.getString("KailleraServerImpl.LoginDeniedAlreadyLoggedIn"));
 		}
 
-		Integer userListKey = new Integer(user.getID());
+		Integer userListKey = user.getID();
 		KailleraUser u = users.get(userListKey);
 		if (u == null)
 		{
